@@ -1,4 +1,4 @@
-ATTO
+4ATTO
 ====
 
 Introduction
@@ -48,13 +48,18 @@ using the formula given by Schoppitsch on his web page:
 
     gcc -Wall -s -O3 a.c
 
+Bugs
+----
+
 After extensive testing,
 I have determined that the resulting a.out
 does not segfault when started.
 The 'q' command also appears to work.
-Additionally, I have gotten it to stop echoing
-anything at the console, which condition persists
-after the program is closed.
+
+I have gotten it to stop echoing anything at the console,
+which condition persists after the program is closed.
+I do not know yet what actions I took to cause that.
+
 Other than that, I don't know anything yet.
 
 License
