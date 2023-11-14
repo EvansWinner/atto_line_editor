@@ -4,14 +4,17 @@ ATTO
 Introduction
 ------------
 
-Atto (styled by the author in all uppercase) 
+ATTO (styled by the author in all uppercase) 
 is Dieter Schoppitsch's minimalistic line editor,
 written *terminus ante quem* 2002.
+(The code says 2002 as do the copyright notices.)
 It is similar at least in basic spirit to Unix's ed(1)
 but is much smaller and simpler.
 It is not to be confused with the small Emacs clone of the same name.
-It requres only stdio.h and a c compiler.
+For building, it requres only stdio.h and a c compiler.
 In particular, it does not require ncurses, or similar.
+For using, the code calls out to the Unix `stty` utility.
+I am not quite sure why yet.
 
 As a result of an unhealthy facination with line editors
 I have decided to make it available here.
@@ -40,7 +43,7 @@ I have no idea what system the executable is compiled for.
 Install
 -------
 
-I have compiled in on a recent Ubuntu
+I have compiled it on a recent Ubuntu
 using the formula given by Schoppitsch on his web page:
 
     gcc -Wall -s -O3 a.c
@@ -49,6 +52,9 @@ After extensive testing,
 I have determined that the resulting a.out
 does not segfault when started.
 The 'q' command also appears to work.
+Additionally, I have gotten it to stop echoing
+anything at the console, which condition persists
+after the program is closed.
 Other than that, I don't know anything yet.
 
 License
