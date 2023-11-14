@@ -1,6 +1,13 @@
 ATTO
 ====
 
+tl;dr
+-----
+
+ATTO is a line editor like ed(1) but much smaller and simpler.
+Look at function main() near the bottom of the source
+to see what commands are available.
+
 Introduction
 ------------
 
@@ -73,8 +80,4 @@ Since GPLv2 had been out for 11 years at that time,
 I am assuming that the author's intent was to use GPLv2
 and have included that license in this repository.
 
-
-## Use
-
-Look near the bottom of a.c for a list of commands.
 
